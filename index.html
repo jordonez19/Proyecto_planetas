@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Planets</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+
+<h1>Tu peso en Marte y Jupiter segun tu peso terrestre</h1><br><br>
+
+<p>Empezemos:</p>
+
+    <script>
+
+    var usuario = prompt("cual es tu peso");
+    var planeta =parseInt( prompt( " elige tu planeta 1\n es marte, 2 es jupiter"));
+    var peso= parseInt(usuario);
+    var graTierra = 9.8;
+    var graMarte = 3.7;
+    var graJupiter = 24.8;
+    document.write("<br>");
+    var peso_final;
+    
+    if(planeta == 1)
+    {
+        peso_final = peso*graMarte/graTierra;
+        peso_final= parseFloat(peso_final);//parseFloat 
+        document.write("Mi peso en marte es <strong> = "+ peso_final+ " Kilos </strong>");
+
+    }
+    else if(planeta == 2)
+    {
+        peso_final = peso*graJupiter/graTierra;
+        peso_final= parseFloat(peso_final);//parseFloat 
+        document.write("Mi peso en Jupiter es <strong> = "+ peso_final+ " Kilos </strong>");
+
+    }
+    else
+    {
+    document.write("WELCOME TO KRYPTON<br> ");
+    document.write("<br> TU PESO ES <br> 100.000.000 kilos");
+    }
+
+
+
+</script>
+        
+
+</body>
+</html>
